@@ -31,7 +31,7 @@ app = FastAPI(
 
 frontend_origins = os.getenv(
     "FRONTEND_ORIGINS",
-    "http://localhost:5173,http://127.0.0.1:5173",
+    "http://localhost:5173,http://127.0.0.1:5173,https://tsunamiguard-ai001.mhabibulie02.workers.dev",
 ).split(",")
 app.add_middleware(
     CORSMiddleware,
